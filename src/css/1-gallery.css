@@ -1,0 +1,37 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: calc((376px * 3) + (24px * 2)); 
+    margin-top: 24px;
+}
+  
+.gallery-item {
+    flex: 0 0 376px; 
+    max-width: 376px;
+    height: 208px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery-image {
+    width: 360px;
+    height: 200px;
+    transition: width 0.3s ease, height 0.3s ease;
+    object-fit: cover; 
+  }
+  
+  .gallery-image:hover {
+    width: 376px;
+    height: 208px;
+    cursor: url('../icons/bxs_hand-down.svg') 16 16, pointer;
+  }
+
+ 
+
